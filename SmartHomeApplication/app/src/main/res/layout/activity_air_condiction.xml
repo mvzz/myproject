@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/btn_air_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:scaleType="centerInside"
+            android:background="#ffffff"
+            >
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="空调"
+            android:textSize="25dp"
+            android:gravity="right"
+            ></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_air_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20"
+            android:textColor="#000"
+            android:textSize="60dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_air_temp"
+            android:layout_toRightOf="@id/tv_air_temp"
+            android:text="℃"
+            android:textColor="#000"
+            android:textSize="30dp"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_air_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="制冷模式"
+            android:textSize="15dp"
+            android:textColor="#000"
+            ></TextView>
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        >
+        <CheckBox
+            android:id="@+id/ck_power"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:button="@null"
+            android:background="@drawable/switch_selector"
+            ></CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="ON"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#000"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="top"
+        >
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            >
+            <ImageButton
+                android:id="@+id/Ibtn_add"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add"
+                android:background="#ffffff"
+                >
+            </ImageButton>
+
+
+            <ImageButton
+                android:id="@+id/Ibtn_sub"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sub"
+                android:background="#ffffff"
+                >
+            </ImageButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <RadioGroup
+                android:id="@+id/rg_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RadioButton
+                    android:id="@+id/rb_cold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="制冷"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rb_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="制热"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/rb_dehum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="除湿"
+                    ></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
